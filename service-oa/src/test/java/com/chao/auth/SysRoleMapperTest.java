@@ -1,10 +1,8 @@
 package com.chao.auth;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.chao.auth.mapper.SysRoleMapper;
 import com.chao.model.system.SysRole;
-import com.sun.org.apache.xalan.internal.xsltc.dom.SortingIterator;
 import org.junit.jupiter.api.Test;
 //import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
