@@ -1,10 +1,9 @@
-package com.chao.auth;
+package com.chao;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
+
 
 /**
  * ClassName: ServiceAuthApplication
@@ -15,8 +14,9 @@ import org.springframework.context.annotation.ComponentScan;
  * @Create：2023/9/12 - 19:23
  */
 
+
+//@ComponentScan("com.chao")
 @SpringBootApplication
-@ComponentScan("com.chao")
 public class ServiceAuthApplication {
 
     public static void main(String[] args) {

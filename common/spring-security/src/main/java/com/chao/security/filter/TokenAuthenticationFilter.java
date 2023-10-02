@@ -5,6 +5,7 @@ import com.chao.common.jwt.JwtHelper;
 import com.chao.common.result.ResponseUtil;
 import com.chao.common.result.Result;
 import com.chao.common.result.ResultCodeEnum;
+import com.chao.security.custom.LoginUserInfoHelper;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -61,6 +62,9 @@ public class TokenAuthenticationFilter extends OncePerRequestFilter {
             String username = JwtHelper.getUsername(token);
             logger.info("useruame:" + username);
             if (!StringUtils.isEmpty(username)) {
+                // 把当前用户信息放到ThreadLocal里面
+                LoginUserInfoHelper.setUserId(JwtHelper.getUserId(token));
+                LoginUserInfoHelper.setUsername(username);
                 String authoritiesString = (String) redisTemplate.opsForValue().get(username);
                 List<Map> mapList = JSON.parseArray(authoritiesString, Map.class);
                 List<SimpleGrantedAuthority> authorities = new ArrayList<>();

@@ -18,7 +18,7 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration
-@MapperScan("com.chao.auth.mapper")
+@MapperScan(basePackages = {"com.chao.auth.mapper", "com.chao.process.mapper"})
 public class MybatisPlusConfig {
 
     @Bean
