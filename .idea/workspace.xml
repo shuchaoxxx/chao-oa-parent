@@ -4,34 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2a3cbe6-ec2b-48e3-badd-5bd999e1e566" name="Changes" comment="角色CRUD测试">
-      <change afterPath="$PROJECT_DIR$/common/spring-security/src/main/java/com/chao/security/custom/LoginUserInfoHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/controller/OaProcessController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/controller/OaProcessTemplateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/controller/OaProcessTypeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/controller/api/ProcessController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/entity/OaProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/mapper/OaProcessMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/mapper/OaProcessTemplateMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/mapper/OaProcessTypeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/mapper/xml/OaProcessMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/mapper/xml/OaProcessTemplateMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/mapper/xml/OaProcessTypeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/service/OaProcessService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/service/OaProcessTemplateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/service/OaProcessTypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/service/impl/OaProcessServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/service/impl/OaProcessTemplateServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/service/impl/OaProcessTypeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-oa/src/main/resources/process/qingjia.bpmn20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-oa/src/main/resources/process/qingjia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-oa/src/test/java/com/chao/auth/activiti/ProcessTest.java" afterDir="false" />
+    <list default="true" id="d2a3cbe6-ec2b-48e3-badd-5bd999e1e566" name="Changes" comment="完成审批设置、审批管理">
+      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/mapper/OaProcessRecordMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/mapper/xml/OaProcessRecordMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/service/OaProcessRecordService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/service/impl/OaProcessRecordServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/service-util/src/main/java/com/chao/common/config/mp/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/service-util/src/main/java/com/chao/common/config/mp/MybatisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/spring-security/src/main/java/com/chao/security/filter/TokenAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/spring-security/src/main/java/com/chao/security/filter/TokenAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-oa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/auth/ServiceAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/ServiceAuthApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-oa/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/auth/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/auth/service/SysUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/auth/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/auth/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/controller/OaProcessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/controller/OaProcessController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/controller/api/ProcessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/controller/api/ProcessController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/entity/OaProcess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/service/OaProcessService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/service/OaProcessService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/service/impl/OaProcessServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/main/java/com/chao/process/service/impl/OaProcessServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-oa/src/test/java/com/chao/auth/code/CodeGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-oa/src/test/java/com/chao/auth/code/CodeGet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +97,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JwtHelper">
+  <component name="RunManager" selected="Spring Boot.ServiceAuthApplication">
     <configuration name="CodeGet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.chao.auth.code.CodeGet" />
       <module name="service-oa" />
@@ -194,10 +179,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JwtHelper" />
-        <item itemvalue="Application.CodeGet" />
-        <item itemvalue="Application.OaProcessTypeController" />
         <item itemvalue="Spring Boot.ServiceAuthApplication" />
+        <item itemvalue="Application.CodeGet" />
+        <item itemvalue="Application.JwtHelper" />
+        <item itemvalue="Application.OaProcessTypeController" />
         <item itemvalue="JUnit.ProcessTest.findProcessedTaskList" />
       </list>
     </recent_temporary>
@@ -218,7 +203,8 @@
       <workItem from="1694732405420" duration="25224000" />
       <workItem from="1694909583126" duration="9530000" />
       <workItem from="1695042243560" duration="28753000" />
-      <workItem from="1696248891174" duration="1517000" />
+      <workItem from="1696248891174" duration="30551000" />
+      <workItem from="1696404845276" duration="1221000" />
     </task>
     <task id="LOCAL-00001" summary="角色CRUD测试">
       <created>1694527162572</created>
@@ -227,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694527162572</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="完成审批设置、审批管理">
+      <created>1696250523948</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696250523948</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +245,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="角色CRUD测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="角色CRUD测试" />
+    <MESSAGE value="完成审批设置、审批管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成审批设置、审批管理" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

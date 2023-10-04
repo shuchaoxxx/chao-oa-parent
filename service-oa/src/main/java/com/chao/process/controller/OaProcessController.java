@@ -4,7 +4,6 @@ package com.chao.process.controller;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.chao.common.result.Result;
-import com.chao.model.process.Process;
 import com.chao.process.service.OaProcessService;
 import com.chao.vo.process.ProcessQueryVo;
 import com.chao.vo.process.ProcessVo;
@@ -40,9 +39,6 @@ public class OaProcessController {
         Page<ProcessVo> pageParam = new Page<>(page, limit);
         IPage<ProcessVo> pageModel = processService.selectPage(pageParam, processQueryVo);
         return Result.ok(pageModel);
-
     }
-
-
 }
 
